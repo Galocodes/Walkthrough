@@ -20,42 +20,42 @@
         </thead>
         <tbody>
           <tr>
-            <td>Contractor</td>
+            <th>Contractor</th>
             <td></td>
             <td>5</td>
           </tr>
           <tr>
-            <td>Customer</td>
+            <th>Customer</th>
             <td></td>
             <td>5</td>
           </tr>
           <tr>
-            <td>Visitor</td>
+            <th>Visitor</th>
             <td></td>
             <td>5</td>
           </tr>
           <tr>
-            <td>Employee</td>
+            <th>Employee</th>
             <td></td>
             <td>5</td>
           </tr>
           <tr>
-            <td>Inventory</td>
+            <th>Inventory</th>
             <td></td>
             <td>4</td>
           </tr>
           <tr>
-            <td>Support Keys</td>
+            <th>Support Keys</th>
             <td></td>
             <td>2</td>
           </tr>
           <tr>
-            <td>Cleaning Crew</td>
+            <th>Cleaning Crew</th>
             <td></td>
             <td>2</td>
           </tr>
           <tr>
-            <td>Licenses On Hand</td>
+            <th>Licenses On Hand</th>
             <td></td>
             <td></td>
           </tr>
