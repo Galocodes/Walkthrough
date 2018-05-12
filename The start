@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>DAL02/06 Walkthrough</title>
   </head>
+  
   <body>
-    <h1>Dal0206 Walkthrough</h1>
+    <h1>DAL02/06 Walkthrough</h1>
+    
     <div> <!--Badge Counts-->
       <h3>Badge Counts</h3>
       <table>
         <thead>
+          <tr>
+            <th scope="col">Badge/Key</th>
+            <th scope="col">#</th>
+            <th scope="col">Max#</th>
+          </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>Contractor</td>
+            <td></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Customer</td>
+            <td></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Visitor</td>
+            <td></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Employee</td>
+            <td></td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Inventory</td>
+            <td></td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Support Keys</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Cleaning Crew</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Licenses On Hand</td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </div>
+    
     <div> <!--Dal02 Sr01-->
       <h3>SR01 - CRAC Temperature and Humidity Readings</h3>
       <table>
@@ -23,6 +72,7 @@
         </tbody>
       </table>
     </div>
+    
     <div> <!--Dal02 Electrical Room-->
       <h3>Electrical Room - CRAC Temperature and Humidity Readings</h3>
       <table>
@@ -32,5 +82,7 @@
         </tbody>
       </table>
     </div>
+    
   </body>
+  
 </html>
