@@ -4,5 +4,33 @@
     <title>DAL02/06 Walkthrough</title>
   </head>
   <body>
+    <h1>Dal0206 Walkthrough</h1>
+    <div> <!--Badge Counts-->
+      <h3>Badge Counts</h3>
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div> <!--Dal02 Sr01-->
+      <h3>SR01 - CRAC Temperature and Humidity Readings</h3>
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div> <!--Dal02 Electrical Room-->
+      <h3>Electrical Room - CRAC Temperature and Humidity Readings</h3>
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
