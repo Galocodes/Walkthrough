@@ -207,8 +207,102 @@
       <h3>Electrical Room - CRAC Temperature and Humidity Readings</h3>
       <table>
         <thead>
+          <tr>
+            <th scope="col">CRAC</th>
+            <th scope="col">Temp</th>
+            <th scope="col">Humidity</th>
+          </tr>
         </thead>
         <tbody>
+          <tr>
+            <th>9</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>21</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>22</th>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div>
+      <h3>Additional Checks</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Check</th>
+            <th scope="col">Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Electrical Room Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Pre-Action Rooms</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Secure Ingress/Egress Points</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>CoLo Cab/Cages Locked</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Upstairs Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>BCC Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Garbage Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>LPR/Dock Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>DC Cleanliness Check</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Methane Detectors x2</th>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </div>
