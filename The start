@@ -3,6 +3,8 @@
 
   <head>
     <title>DAL02/06 Walkthrough</title>
+    
+    <link href="style.css" type="text/css" rel="stylesheet"> <!--link to css file-->
   </head>
   
   <body>
