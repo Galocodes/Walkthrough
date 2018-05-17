@@ -8,8 +8,9 @@
   </head>
 
   <body>
+    <h1>DAL02/06 Walkthrough</h1>
 
-  <h2>DAL06</h2> <!--DAL06 Section begins-->
+    <h2>DAL06</h2> <!--DAL06 Section begins-->
     
     <div class="container">
       <h3>SR01 - CRAC Temperature and Humidity Readings</h3>
