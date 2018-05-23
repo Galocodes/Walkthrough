@@ -1,3 +1,29 @@
-.nav {
-  background-color: rgb(46,105,163);
+body {
+  background-color: #DBE9EE;
+  margin: 0 auto;
 }
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+th {
+  background-color: #DBE9EE;
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 1px;
+  display: inline-block;
+}
+
+.nav {
+  background-color: #466995;
+}
+
+.container {
+}
+
