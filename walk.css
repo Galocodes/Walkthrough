@@ -12,12 +12,25 @@ h1 {
 }
 
 th {
+  background-color: #466995;
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 1px;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+}
+
+td {
   background-color: #DBE9EE;
   text-align: center;
   border: 2px solid black;
   padding: 5px;
   margin: 1px;
   display: inline-block;
+  height: 50px;
+  width: 100px;
 }
 
 .nav {
