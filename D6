@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   
   <head>
     <title>DAL02/06 Walkthrough</title>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
     <link href="walk.css" type="text/css" rel="stylesheet"> <!--link to css file-->
   </head>
 
@@ -21,269 +21,167 @@
     <h2>DAL06</h2> <!--DAL06 Section begins-->
     
     <div class="container">
-      <h3>SR01 - CRAC Temperature and Humidity Readings</h3>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">CRAC</th>
-            <th scope="col">Temp</th>
-            <th scope="col">Humidity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>5</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>6</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>7</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>8</th>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <div class="container">
-      <h3>SR02 - CRAC Temperature and Humidity Readings</h3>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">CRAC</th>
-            <th scope="col">Temp</th>
-            <th scope="col">Humidity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>5</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>6</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>7</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>8</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>9</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>10</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>11</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>12</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>13</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>14</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>15</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>16</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>17</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>18</th>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    
-    <div class="container">
-      <h3>SR03 - CRAC Temperature and Humidity Readings</h3>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">CRAC</th>
-            <th scope="col">Temp</th>
-            <th scope="col">Humidity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>5</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>6</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>7</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>8</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>9</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>10</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>11</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>12</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>13</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>14</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>15</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>16</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>17</th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>18</th>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <form method="GET" action="http://localhost/echo.pl">
+      <dl>
+        <fieldset>
+          <legend>SR01 - CRAC Temperature and Humidity Readings</legend>
+            <dt>CRAC #1:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #2:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #3:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #4:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #5:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #6:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #7:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #8:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+        </fieldset>
+        
+        <fieldset>
+          <legend>SR02 - CRAC Temperature and Humidity Readings</legend>
+            <dt>CRAC #1:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #2:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #3:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #4:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #5:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #6:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #7:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #8:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #9:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #10:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #11:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #12:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #13:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #14:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #15:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #16:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #17:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #18:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+        </fieldset>
+        
+        <fieldset>
+          <legend>SR03 - CRAC Temperature and Humidity Readings</legend>
+            <dt>CRAC #1:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #2:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #3:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #4:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #5:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #6:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #7:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #8:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #9:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #10:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #11:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #12:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #13:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #14:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #15:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #16:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #17:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+            <dt>CRAC #18:</dt>
+            <dd><input type="text" name="temperature" value="Temp" size="3"></dd>
+            <dd><input type="text" name="humidity" value="Humid" size="3"></dd>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Additional Checks</legend>
+            Electrical Room Check <input type="checkbox" value="Yes">
+            <br>
+            Secure Ingress/Egress Points <input type="checkbox" value="Yes">
+            <br>
+            DC Cleaniness Check <input type="checkbox" value="Yes">
+            <br>
+            Methane Detectors x1 <input type="checkbox" value="Yes">
+            <br>
+        </fieldset>
+      </dl>
+        
+      <p><input type="submit" value="Submit DAL06 Walkthrough"></p>
+      </form>
 
   </body>
 
