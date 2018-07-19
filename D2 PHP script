@@ -1,0 +1,562 @@
+<?php
+if(isset($_POST['email'])) {
+ 
+    // E-mail details
+    $email_to = "giancarlo.dellesite@ibm.com";
+    $email_subject = "Form Test";
+	
+	function died($error) {
+        // Error code goes here
+        echo "Sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+	
+	// validation expected data exists
+    if(!isset($_POST['contractor_count']) ||
+        !isset($_POST['customer_count']) ||
+        !isset($_POST['visitor_count']) ||
+        !isset($_POST['employee_count']) ||
+        !isset($_POST['inventory_count']) ||
+		!isset($_POST['support_count']) ||
+		!isset($_POST['cleaningcrew_count']) ||
+		!isset($_POST['licenses_count']) ||
+		!isset($_POST['crac1_temp']) ||
+		!isset($_POST['crac1_hum']) ||
+		!isset($_POST['crac2_temp']) ||
+		!isset($_POST['crac2_hum']) ||
+		!isset($_POST['crac3_temp']) ||
+		!isset($_POST['crac3_hum']) ||
+		!isset($_POST['crac4_temp']) ||
+		!isset($_POST['crac4_hum']) ||
+		!isset($_POST['crac5_temp']) ||
+		!isset($_POST['crac5_hum']) || 
+		!isset($_POST['crac6_temp']) ||
+		!isset($_POST['crac6_hum']) || 
+		!isset($_POST['crac7_temp']) ||
+		!isset($_POST['crac7_hum']) ||
+		!isset($_POST['crac8_temp']) ||
+		!isset($_POST['crac8_hum']) ||
+		!isset($_POST['crac9_temp']) ||
+		!isset($_POST['crac9_hum']) ||
+		!isset($_POST['crac10_temp']) ||
+		!isset($_POST['crac10_hum']) ||
+		!isset($_POST['crac11_temp']) ||
+		!isset($_POST['crac11_hum']) ||
+		!isset($_POST['crac12_temp']) ||
+		!isset($_POST['crac12_hum']) ||
+		!isset($_POST['crac13_temp']) ||
+		!isset($_POST['crac13_hum']) ||
+		!isset($_POST['crac14_temp']) ||
+		!isset($_POST['crac14_hum']) ||
+		!isset($_POST['crac15_temp']) ||
+		!isset($_POST['crac15_hum']) ||
+		!isset($_POST['crac16_temp']) ||
+		!isset($_POST['crac16_hum']) ||
+		!isset($_POST['crac17_temp']) ||
+		!isset($_POST['crac17_hum']) ||
+		!isset($_POST['crac18_temp']) ||
+		!isset($_POST['crac18_hum']) ||
+		!isset($_POST['crac19_temp']) ||
+		!isset($_POST['crac19_hum']) ||
+		!isset($_POST['crac20_temp']) ||
+		!isset($_POST['crac20_hum']) ||
+		!isset($_POST['crac21_temp']) ||
+		!isset($_POST['crac21_hum']) ||
+		!isset($_POST['crac22_temp']) ||
+		!isset($_POST['crac22_hum']) ||
+		!isset($_POST['crac23_temp']) ||
+		!isset($_POST['crac23_hum']) ||
+		!isset($_POST['crac24_temp']) ||
+		!isset($_POST['crac24_hum']) ||
+		!isset($_POST['crac25_temp']) ||
+		!isset($_POST['crac25_hum']) ||
+		!isset($_POST['ele_crac9_temp']) ||
+		!isset($_POST['ele_crac9_hum']) ||
+		!isset($_POST['ele_crac11_temp']) ||
+		!isset($_POST['ele_crac11_hum']) ||
+		!isset($_POST['ele_crac12_temp']) ||
+		!isset($_POST['ele_crac12_hum']) ||
+		!isset($_POST['ele_crac15_temp']) ||
+		!isset($_POST['ele_crac15_hum']) ||
+		!isset($_POST['ele_crac20_temp']) ||
+		!isset($_POST['ele_crac20_hum']) ||
+		!isset($_POST['ele_crac21_temp']) ||
+		!isset($_POST['ele_crac21_hum']) ||
+		!isset($_POST['ele_crac22_temp']) ||
+		!isset($_POST['ele_crac22_hum']) ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '') ||
+    !isset($_POST[''] == '')) {
+        died('Sorry, but there appears to be a problem with the form you submitted.');       
+    }
+	// defining variables
+	$contractor_count = $_GET['contractor_count'];
+    $customer_count = $_GET['customer_count'];
+    $visitor_count = $_GET['visitor_count'];
+    $employee_count = $_GET['employee_count']; 
+    $inventory_count = $_GET['inventory_count']; 
+	$support_count = $_GET['support_count']; 
+	$cleaningcrew_count = $_GET['cleaningcrew_count']; 
+	$licenses_count = $_GET['licenses_count']; 
+	
+	$crac1_temp = $_GET['crac1_temp'];
+	$crac1_hum = $_GET['crac1_hum'];
+	$crac2_temp = $_GET['crac2_temp'];
+	$crac2_hum = $_GET['crac2_hum'];
+	$crac3_temp = $_GET['crac3_temp'];
+	$crac3_hum = $_GET['crac3_hum'];
+	$crac4_temp = $_GET['crac4_temp'];
+	$crac4_hum = $_GET['crac4_hum'];
+	$crac5_temp = $_GET['crac5_temp'];
+	$crac5_hum = $_GET['crac5_hum'];
+	$crac6_temp = $_GET['crac6_temp'];
+	$crac6_hum = $_GET['crac6_hum'];
+	$crac7_temp = $_GET['crac7_temp'];
+	$crac7_hum = $_GET['crac7_hum'];
+	$crac8_temp = $_GET['crac8_temp'];
+	$crac8_hum = $_GET['crac8_hum'];
+	$crac9_temp = $_GET['crac9_temp'];
+	$crac9_hum = $_GET['crac9_hum'];
+	$crac10_temp = $_GET['crac10_temp'];
+	$crac10_hum = $_GET['crac10_hum'];
+	$crac11_temp = $_GET['crac11_temp'];
+	$crac11_hum = $_GET['crac11_hum'];
+	$crac12_temp = $_GET['crac12_temp'];
+	$crac12_hum = $_GET['crac12_hum'];
+	$crac13_temp = $_GET['crac13_temp'];
+	$crac13_hum = $_GET['crac13_hum'];
+	$crac14_temp = $_GET['crac14_temp'];
+	$crac14_hum = $_GET['crac14_hum'];
+	$crac15_temp = $_GET['crac15_temp'];
+	$crac15_hum = $_GET['crac15_hum'];
+	$crac16_temp = $_GET['crac16_temp'];
+	$crac16_hum = $_GET['crac16_hum'];
+	$crac17_temp = $_GET['crac17_temp'];
+	$crac17_hum = $_GET['crac17_hum'];
+	$crac18_temp = $_GET['crac18_temp'];
+	$crac18_hum = $_GET['crac18_hum'];
+	$crac19_temp = $_GET['crac19_temp'];
+	$crac19_hum = $_GET['crac19_hum'];
+	$crac20_temp = $_GET['crac20_temp'];
+	$crac20_hum = $_GET['crac20_hum'];
+	$crac21_temp = $_GET['crac21_temp'];
+	$crac21_hum = $_GET['crac21_hum'];
+	$crac22_temp = $_GET['crac22_temp'];
+	$crac22_hum = $_GET['crac22_hum'];
+	$crac23_temp = $_GET['crac23_temp'];
+	$crac23_hum = $_GET['crac23_hum'];
+	$crac24_temp = $_GET['crac24_temp'];
+	$crac24_hum = $_GET['crac24_hum'];
+	$crac25_temp = $_GET['crac25_temp'];
+	$crac25_hum = $_GET['crac25_hum'];
+	
+	$ele_crac9_temp = $_GET['ele_crac9_temp'];
+	$ele_crac9_hum = $_GET['ele_crac9_hum'];
+	$ele_crac11_temp = $_GET['ele_crac11_temp'];
+	$ele_crac11_hum = $_GET['ele_crac11_hum'];
+	$ele_crac12_temp = $_GET['ele_crac12_temp'];
+	$ele_crac12_hum = $_GET['ele_crac12_hum'];
+	$ele_crac15_temp = $_GET['ele_crac15_temp'];
+	$ele_crac15_hum = $_GET['ele_crac15_hum'];
+	$ele_crac20_temp = $_GET['ele_crac20_temp'];
+	$ele_crac20_hum = $_GET['ele_crac20_hum'];
+	$ele_crac21_temp = $_GET['ele_crac21_temp'];
+	$ele_crac21_hum = $_GET['ele_crac21_hum'];
+	$ele_crac22_temp = $_GET['ele_crac22_temp'];
+	$ele_crac22_hum = $_GET['ele_crac22_hum'];
+	
+	$error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	$string_exp = "/^[A-Za-z .'-]+$/";
+	
+  if(!preg_match($string_exp,$contractor_count)) {
+    $error_message .= 'The Contractor count you entered does not appear to be valid.<br />';
+  }
+	
+  if(!preg_match($string_exp,$customer_count)) {
+    $error_message .= 'The Customer count you entered does not appear to be valid.<br />';
+  }	
+  
+  if(!preg_match($string_exp,$visitor_count)) {
+    $error_message .= 'The Visitor count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$employee_count)) {
+    $error_message .= 'The Employee count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$inventory_count)) {
+    $error_message .= 'The Inventory count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$support_count)) {
+    $error_message .= 'The Support count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$cleaningcrew_count)) {
+    $error_message .= 'The Cleaning crew count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$licenses_count)) {
+    $error_message .= 'The Licenses count you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac1_temp)) {
+    $error_message .= 'The CRAC 1 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac1_hum)) {
+    $error_message .= 'The CRAC 1 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac2_temp)) {
+    $error_message .= 'The CRAC 2 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac2_hum)) {
+    $error_message .= 'The CRAC 2 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac3_temp)) {
+    $error_message .= 'The CRAC 3 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac3_hum)) {
+    $error_message .= 'The CRAC 3 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac4_temp)) {
+    $error_message .= 'The CRAC 4 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac4_hum)) {
+    $error_message .= 'The CRAC 4 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac5_temp)) {
+    $error_message .= 'The CRAC 5 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac5_hum)) {
+    $error_message .= 'The CRAC 5 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac6_temp)) {
+    $error_message .= 'The CRAC 6 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac6_hum)) {
+    $error_message .= 'The CRAC 6 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac7_temp)) {
+    $error_message .= 'The CRAC 7 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac7_hum)) {
+    $error_message .= 'The CRAC 7 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac8_temp)) {
+    $error_message .= 'The CRAC 8 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac8_hum)) {
+    $error_message .= 'The CRAC 8 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac9_temp)) {
+    $error_message .= 'The CRAC 9 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac9_hum)) {
+    $error_message .= 'The CRAC 9 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac10_temp)) {
+    $error_message .= 'The CRAC 10 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac10_hum)) {
+    $error_message .= 'The CRAC 10 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac11_temp)) {
+    $error_message .= 'The CRAC 11 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac11_hum)) {
+    $error_message .= 'The CRAC 11 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac12_temp)) {
+    $error_message .= 'The CRAC 12 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac12_hum)) {
+    $error_message .= 'The CRAC 12 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac13_temp)) {
+    $error_message .= 'The CRAC 13 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac13_hum)) {
+    $error_message .= 'The CRAC 13 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac14_temp)) {
+    $error_message .= 'The CRAC 14 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac14_hum)) {
+    $error_message .= 'The CRAC 14 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac15_temp)) {
+    $error_message .= 'The CRAC 15 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac15_hum)) {
+    $error_message .= 'The CRAC 15 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac16_temp)) {
+    $error_message .= 'The CRAC 16 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac16_hum)) {
+    $error_message .= 'The CRAC 16 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac17_temp)) {
+    $error_message .= 'The CRAC 17 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac17_hum)) {
+    $error_message .= 'The CRAC 17 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac18_temp)) {
+    $error_message .= 'The CRAC 18 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac18_hum)) {
+    $error_message .= 'The CRAC 18 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac19_temp)) {
+    $error_message .= 'The CRAC 19 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac19_hum)) {
+    $error_message .= 'The CRAC 19 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac20_temp)) {
+    $error_message .= 'The CRAC 20 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac20_hum)) {
+    $error_message .= 'The CRAC 20 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac21_temp)) {
+    $error_message .= 'The CRAC 21 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac21_hum)) {
+    $error_message .= 'The CRAC 21 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac22_temp)) {
+    $error_message .= 'The CRAC 22 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac22_hum)) {
+    $error_message .= 'The CRAC 22 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac23_temp)) {
+    $error_message .= 'The CRAC 23 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac23_hum)) {
+    $error_message .= 'The CRAC 23 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac24_temp)) {
+    $error_message .= 'The CRAC 24 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac24_hum)) {
+    $error_message .= 'The CRAC 24 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac25_temp)) {
+    $error_message .= 'The CRAC 25 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$crac25_hum)) {
+    $error_message .= 'The CRAC 25 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac9_temp)) {
+    $error_message .= 'The CRAC 9 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac9_hum)) {
+    $error_message .= 'The CRAC 9 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac11_temp)) {
+    $error_message .= 'The CRAC 11 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac11_hum)) {
+    $error_message .= 'The CRAC 11 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac12_temp)) {
+    $error_message .= 'The CRAC 12 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac12_hum)) {
+    $error_message .= 'The CRAC 12 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac15_temp)) {
+    $error_message .= 'The CRAC 15 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac15_hum)) {
+    $error_message .= 'The CRAC 15 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac20_temp)) {
+    $error_message .= 'The CRAC 20 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac20_hum)) {
+    $error_message .= 'The CRAC 20 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac21_temp)) {
+    $error_message .= 'The CRAC 21 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac21_hum)) {
+    $error_message .= 'The CRAC 21 humidity you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac22_temp)) {
+    $error_message .= 'The CRAC 22 temp you entered does not appear to be valid.<br />';
+  }
+  
+  if(!preg_match($string_exp,$ele_crac22_hum)) {
+    $error_message .= 'The CRAC 22 humidity you entered does not appear to be valid.<br />';
+  }
+  
+    $email_message = "DAL02 Walkthrough.\n\n";
+	
+	function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+	
+	
+	$email_message .= "Badge Counts.\n";
+	
+	$email_message .= "Contractor Count: ".clean_string($contractor_count)."\n";
+    $email_message .= "Customer Count: ".clean_string($customer_count)."\n";
+	$email_message .= "Visitor Count: ".clean_string($visitor_count)."\n";
+    $email_message .= "Employee Count: ".clean_string($employee_count)."\n";
+	$email_message .= "Inventory Count: ".clean_string($inventory_count)."\n";
+    $email_message .= "Support Count: ".clean_string($support_count)."\n";
+	$email_message .= "Cleaning Crew Count: ".clean_string($cleaningcrew_count)."\n";
+    $email_message .= "Licenses Count: ".clean_string($licenses_count)."\n";
+	
+	$email_message .= "SR01 CRAC Temperatures and Humidity.\n";
+	
+	$email_message .= "CRAC 1 Temperature: ".clean_string($crac1_temp)."\n";
+    $email_message .= "CRAC 1 Humidity: ".clean_string($crac1_hum)."\n";
+    $email_message .= "CRAC 2 Temperature: ".clean_string($crac2_temp)."\n";
+    $email_message .= "CRAC 2 Humidity: ".clean_string($crac2_hum)."\n";
+    $email_message .= "CRAC 3 Temperature: ".clean_string($crac3_temp)."\n";
+	$email_message .= "CRAC 3 Humidity: ".clean_string($crac3_hum)."\n";
+	$email_message .= "CRAC 4 Temperature: ".clean_string($crac4_temp)."\n";
+    $email_message .= "CRAC 4 Humidity: ".clean_string($crac4_hum)."\n";
+	$email_message .= "CRAC 5 Temperature: ".clean_string($crac5_temp)."\n";
+    $email_message .= "CRAC 5 Humidity: ".clean_string($crac5_hum)."\n";
+	$email_message .= "CRAC 6 Temperature: ".clean_string($crac6_temp)."\n";
+    $email_message .= "CRAC 6 Humidity: ".clean_string($crac6_hum)."\n";
+	$email_message .= "CRAC 7 Temperature: ".clean_string($crac7_temp)."\n";
+    $email_message .= "CRAC 7 Humidity: ".clean_string($crac7_hum)."\n";
+	$email_message .= "CRAC 8 Temperature: ".clean_string($crac8_temp)."\n";
+    $email_message .= "CRAC 8 Humidity: ".clean_string($crac8_hum)."\n";
+	$email_message .= "CRAC 9 Temperature: ".clean_string($crac9_temp)."\n";
+    $email_message .= "CRAC 9 Humidity: ".clean_string($crac9_hum)."\n";
+	$email_message .= "CRAC 10 Temperature: ".clean_string($crac10_temp)."\n";
+    $email_message .= "CRAC 10 Humidity: ".clean_string($crac10_hum)."\n";
+	$email_message .= "CRAC 11 Temperature: ".clean_string($crac11_temp)."\n";
+    $email_message .= "CRAC 11 Humidity: ".clean_string($crac11_hum)."\n";
+	$email_message .= "CRAC 12 Temperature: ".clean_string($crac12_temp)."\n";
+    $email_message .= "CRAC 12 Humidity: ".clean_string($crac12_hum)."\n";
+	$email_message .= "CRAC 13 Temperature: ".clean_string($crac13_temp)."\n";
+    $email_message .= "CRAC 13 Humidity: ".clean_string($crac13_hum)."\n";
+	$email_message .= "CRAC 14 Temperature: ".clean_string($crac14_temp)."\n";
+    $email_message .= "CRAC 14 Humidity: ".clean_string($crac14_hum)."\n";
+	$email_message .= "CRAC 15 Temperature: ".clean_string($crac15_temp)."\n";
+    $email_message .= "CRAC 15 Humidity: ".clean_string($crac15_hum)."\n";
+	$email_message .= "CRAC 16 Temperature: ".clean_string($crac16_temp)."\n";
+    $email_message .= "CRAC 16 Humidity: ".clean_string($crac16_hum)."\n";
+	$email_message .= "CRAC 17 Temperature: ".clean_string($crac17_temp)."\n";
+    $email_message .= "CRAC 17 Humidity: ".clean_string($crac17_hum)."\n";
+	$email_message .= "CRAC 18 Temperature: ".clean_string($crac18_temp)."\n";
+    $email_message .= "CRAC 18 Humidity: ".clean_string($crac18_hum)."\n";
+	$email_message .= "CRAC 19 Temperature: ".clean_string($crac19_temp)."\n";
+    $email_message .= "CRAC 19 Humidity: ".clean_string($crac19_hum)."\n";
+	$email_message .= "CRAC 20 Temperature: ".clean_string($crac20_temp)."\n";
+    $email_message .= "CRAC 20 Humidity: ".clean_string($crac20_hum)."\n";
+	$email_message .= "CRAC 21 Temperature: ".clean_string($crac21_temp)."\n";
+    $email_message .= "CRAC 21 Humidity: ".clean_string($crac21_hum)."\n";
+	$email_message .= "CRAC 22 Temperature: ".clean_string($crac22_temp)."\n";
+    $email_message .= "CRAC 22 Humidity: ".clean_string($crac22_hum)."\n";
+	$email_message .= "CRAC 23 Temperature: ".clean_string($crac23_temp)."\n";
+    $email_message .= "CRAC 23 Humidity: ".clean_string($crac23_hum)."\n";
+	$email_message .= "CRAC 24 Temperature: ".clean_string($crac24_temp)."\n";
+    $email_message .= "CRAC 24 Humidity: ".clean_string($crac24_hum)."\n";
+	$email_message .= "CRAC 25 Temperature: ".clean_string($crac25_temp)."\n";
+    $email_message .= "CRAC 25 Humidity: ".clean_string($crac25_hum)."\n";
+	
+	$email_message .= "Electric Room CRAC Temperature and Humidity.\n";
+	
+	$email_message .= "CRAC 9 Temperature: ".clean_string($ele_crac9_temp)."\n";
+    $email_message .= "CRAC 9 Humidity: ".clean_string($ele_crac9_hum)."\n";
+	$email_message .= "CRAC 11 Temperature: ".clean_string($ele_crac11_temp)."\n";
+    $email_message .= "CRAC 11 Humidity: ".clean_string($ele_crac11_hum)."\n";
+	$email_message .= "CRAC 12 Temperature: ".clean_string($ele_crac12_temp)."\n";
+    $email_message .= "CRAC 12 Humidity: ".clean_string($ele_crac12_hum)."\n";
+	$email_message .= "CRAC 15 Temperature: ".clean_string($ele_crac15_temp)."\n";
+    $email_message .= "CRAC 15 Humidity: ".clean_string($ele_crac15_hum)."\n";
+	$email_message .= "CRAC 20 Temperature: ".clean_string($ele_crac20_temp)."\n";
+    $email_message .= "CRAC 20 Humidity: ".clean_string($ele_crac20_hum)."\n";
+	$email_message .= "CRAC 21 Temperature: ".clean_string($ele_crac21_temp)."\n";
+    $email_message .= "CRAC 21 Humidity: ".clean_string($ele_crac21_hum)."\n";
+	$email_message .= "CRAC 22 Temperature: ".clean_string($ele_crac22_temp)."\n";
+    $email_message .= "CRAC 22 Humidity: ".clean_string($ele_crac22_hum)."\n";
+	
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
+?>
